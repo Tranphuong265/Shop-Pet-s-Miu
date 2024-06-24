@@ -19,4 +19,6 @@ flutter:
   uses-material-design: true
 
 assets:
-  - lib/images/
+  - chanmeo.png
+  - chanmeologo.png
+  - meo.png

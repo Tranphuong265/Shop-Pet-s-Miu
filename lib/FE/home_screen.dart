@@ -14,19 +14,24 @@ class HomeScreen extends StatelessWidget {
               Column(
                 children: [
                   //ICon bên trái hihi
-                  const Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Icon(
-                      Icons.pets,
-                      size: 50.0,
-                      color: Colors.black,
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 16.0),
+                      child: ClipRRect(
+                        child: Image.asset(
+                          'chanmeologo.png',
+                          width: 50,
+                          height: 50,
+                        ),
+                      ),
                     ),
                   ),
                   //Hình ảnh con mèo
                   ClipRRect(
                     borderRadius: BorderRadius.circular(20.0),
                     child: Image.asset(
-                      'lib/images/meo.png',
+                      'meo.png',
                       width: 431.0,
                       height: 419.0,
                       //fit: BoxFit.cover,
@@ -51,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                         height: 30,
                       ),
                       Image.asset(
-                        'lib/images/chanmeo.png',
+                        'chanmeo.png',
                         width: 45,
                         height: 45,
                         fit: BoxFit.cover,
