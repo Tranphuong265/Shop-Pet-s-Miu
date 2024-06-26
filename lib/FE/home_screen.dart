@@ -6,7 +6,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(Object context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFB2EBF2),
+      //backgroundColor: const Color(0xFFB2EBF2),
+      backgroundColor: Color.fromRGBO(176, 238, 231, 1),
       body: SafeArea(
         child: Center(
           child: Stack(
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerLeft,
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 16.0),
+                      padding: const EdgeInsets.only(left: 16.0, top: 20),
                       child: ClipRRect(
                         child: Image.asset(
                           'chanmeologo.png',
@@ -59,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                         'chanmeo.png',
                         width: 45,
                         height: 45,
-                        fit: BoxFit.cover,
+                        // fit: BoxFit.cover,
                       ),
                       const SizedBox(
                         height: 30.0,
@@ -79,12 +80,13 @@ class HomeScreen extends StatelessWidget {
                           // Xử lý sự kiện khi nút được nhấn
                         },
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xFFB2EBF2), // Màu nền của nút
+                          backgroundColor: Color.fromRGBO(176, 238, 231, 1),
+                          //backgroundColor: Color(0xFFB2EBF2), // Màu nền của nút
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 40.0, vertical: 15.0),
+                              horizontal: 150.0, vertical: 15.0),
                         ),
                         child: const Text(
                           'OK',
